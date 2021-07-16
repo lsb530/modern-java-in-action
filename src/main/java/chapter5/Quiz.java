@@ -13,7 +13,14 @@ public class Quiz {
 //        Quiz1();
 //        Quiz2_1();
 //        Quiz2_2();
-//        Quiz2_3();
+        Quiz2_3();
+//        Quiz5_3(Type.OTHER);
+    }
+
+    private static void Quiz5_3(Type type) {
+//        Integer count = menu.stream().map(dish -> 1).reduce(0, Integer::sum);
+        Integer count = menu.stream().filter(dish -> dish.getType() == type).map(dish -> 1).reduce(0, Integer::sum);
+        System.out.println(type + "요리의 개수 = " + count);
     }
 
     private static void Quiz2_3() {

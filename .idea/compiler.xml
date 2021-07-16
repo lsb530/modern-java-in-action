@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AjcSettings">
+    <option name="ajcPath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjtools/1.9.5/dfca1edabdca4f262d7f7c45cd8e11e6b88b9f6/aspectjtools-1.9.5.jar" />
+    <option name="delegateToJavac" value="true" />
+    <option name="aptOptionsEnabled" value="true" />
+  </component>
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
