@@ -24,9 +24,7 @@ public class Grouping {
 
     private static final String useLess = "-------------------------------------------";
 
-    enum CaloricLevel {DIET, NORMAL, FAT}
-
-    ;
+    enum CaloricLevel {DIET, NORMAL, FAT};
 
     public static void main(String[] args) {
         Gson gson = gsonUtil.getGson();
@@ -59,10 +57,10 @@ public class Grouping {
         System.out.println(useLess + methodName + useLess + "\n");
         Map<Type, List<Dish>> caloricDishesByType = menu.stream()
             .collect(
-            groupingBy(Dish::getType,
-                filtering(dish -> dish.getCalories() > 500, toList())
-            )
-        );
+                groupingBy(Dish::getType,
+                    filtering(dish -> dish.getCalories() > 500, toList())
+                )
+            );
         System.out.println("caloricDishesByType = " + caloricDishesByType);
         String methodName1 = new Exception().getStackTrace()[0].getMethodName();
         System.out.println("methodName1 = " + methodName1);

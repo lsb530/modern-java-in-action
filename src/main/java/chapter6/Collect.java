@@ -15,6 +15,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Stream;
 import util.GsonUtil;
@@ -29,12 +31,20 @@ public class Collect {
 //        maxDish(gson);
 //        totalCalories();
 //        avgCalories();
-        summarizingStastics(gson);
+//        summarizingStastics(gson);
 //        menuJoining();
 //        totalCaloriesAndMostCalorieDish(gson);
 //        misUseReduce();
 //        collectSum();
 //        longCount();
+        test(3,5,8);
+//        <T> ? ...
+    }
+
+    private static void test(int ...a) {
+        for (int j : a) {
+            System.out.println("a[i] = " + j);
+        }
     }
 
     private static void longCount() {
